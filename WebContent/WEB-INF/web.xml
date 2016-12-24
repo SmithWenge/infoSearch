@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <welcome-file-list>
+    <welcome-file>listStu.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>searchServlet</servlet-name>
+    <servlet-class>com.info.controller.searchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>searchByNaServlet</servlet-name>
+    <servlet-class>com.info.controller.searchByNaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>searchByResumeServlet</servlet-name>
+    <servlet-class>com.info.controller.searchByResumeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>searchByResumeServlet</servlet-name>
+    <url-pattern>/searchByResume</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>searchByNaServlet</servlet-name>
+    <url-pattern>/searchByName</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>searchServlet</servlet-name>
+    <url-pattern>/searchByForm</url-pattern>
+  </servlet-mapping>
+</web-app>
