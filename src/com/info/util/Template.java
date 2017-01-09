@@ -12,7 +12,8 @@ public class Template {
 	Connection conn = null;
 	PreparedStatement stmt = null;
 	ResultSet rs = null;
-	
+
+    //method to query.
 	public Object query(String sql,Object[] params,RowMpper<?> rsh){
 		
 		try{
